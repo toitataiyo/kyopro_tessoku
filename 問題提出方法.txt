@@ -1,0 +1,19 @@
+コンテスト用問題のインストール
+oj-prepare 問題のtopのURL
+各問題のディレクトリにcdする
+ディレクトリ内のmain.pyのsolve関数の中身に回答する
+oj test -c "python main.py" -t 2
+(-cでpythonを指定、-tでTLEの時間を設定できる)
+
+
+普段の問題を解く方法
+問題のインストール方法
+1. 問題のページを開く
+
+2. 次のコマンドで問題をインストール
+oj d 問題のあるURL -d tessoku/好きな名前
+(例 oj d https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_d -d tessoku/1_4)
+
+3. 次のコマンドでテストを行う
+oj t -c "python3 回答を書いたpythonのパス" -d tessoku/問題のあるディレクトリ -t 2
+(例 oj t -c "python3 answer.py" -d tessoku/1_4 -t 2)
